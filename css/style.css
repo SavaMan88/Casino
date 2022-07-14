@@ -68,6 +68,29 @@ p {
     color: var(--colorText);
 }
 
+@media (min-width: 767px) {
+    h1 {
+        font-size: 70px;
+        line-height: 82px;
+    }
+    h2 {
+        font-size: 45px;
+        line-height: 53px;
+    }
+    h3 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+    h4 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
 .yellow-btn {
     display: flex;
     justify-content: center;
@@ -101,12 +124,7 @@ p {
     width: 100%;
     max-width: 1080px;
     padding: 0 20px;
-}
-
-@media (min-width: 767px) {
-    .container {
-        margin: 0 auto;
-    }
+    margin: 0 auto;
 }
 
 .header-wrap {
@@ -128,16 +146,7 @@ p {
     background: url("../images/backMob-head.png") center/cover no-repeat;
 }
 
-@media (min-width: 767px) {
-    .head-sections {
-        background-image: url("../images/back-head.png");
-    }
-}
-
 .head-sections__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 88px 0 61px;
 }
@@ -158,6 +167,22 @@ p {
     height: 69px;
     width: 236px;
     text-transform: uppercase;
+}
+
+@media (min-width: 767px) {
+    .head-sections {
+        background-image: url("../images/back-head.png");
+    }
+
+    .head-sections__wrap {
+        padding: 133px 0 68px;
+    }
+
+    .head-sections__title {
+        font-size: 82px;
+        line-height: 96px;
+        margin-bottom: 34px;
+    }
 }
 
 /*content-section*/
@@ -183,12 +208,6 @@ p {
     padding: 42px 0;
 }
 
-@media (min-width: 767px) {
-    .info-section {
-        background: url("../images/back-info.png") center/cover no-repeat;
-    }
-}
-
 .info-section__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +229,16 @@ p {
 .info-section__title {
     color: var(--colorWhite);
     line-height: 33px;
+}
+
+@media (min-width: 767px) {
+    .info-section {
+        background: url("../images/back-info.png") center/cover no-repeat;
+    }
+
+    .info-section__title {
+        font-size: 25px;
+    }
 }
 
 /*Game-section*/
@@ -243,6 +272,7 @@ p {
     justify-content: center;
     text-align: center;
     transition: opacity 0.3s ease;
+    padding: 0 10px;
 }
 
 .game-section__play:hover {
@@ -252,6 +282,8 @@ p {
 .game-section__title {
     color: var(--colorWhite);
     margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .game-section__button {
@@ -276,6 +308,11 @@ p {
     .game-section__img {
         height: 100%;
         max-height: 31vh;
+    }
+
+    .game-section__title {
+        font-size: 22px;
+        line-height: 26px;
     }
 
     .game-section__button {
