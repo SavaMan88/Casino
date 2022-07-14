@@ -1,0 +1,83 @@
+/*Reset for global components*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6,
+p, em, img, strong, sub, sup,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, table, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details,
+figcaption, figure, footer, header, hgroup, menu, nav,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font: inherit;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+button,
+button:active,
+input:active,
+input:focus {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ /*Adaptive images*/
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: 100%;
+}
+
+ /*Google map fix*/
+
+.gm-style img {
+  max-width: none;
+}
