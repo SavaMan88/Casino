@@ -8,14 +8,7 @@
     transition: all 0.3s ease;
     transform: translateX(-110%);
 }
-@media (min-width: 767px) {
-    .nav {
-        position: static;
-        transform: translateX(0);
-        padding: 0;
-        width: auto;
-    }
-}
+
 .nav.active {
     transform: translateX(0);
 }
@@ -24,42 +17,89 @@
 
 .menu-container {
     height: 100vh;
+    width: 100%;
     background-color: var(--colorBlack);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 77px;
 }
-@media (min-width: 767px) {
-    .menu-container {
-        height: 100%;
-        background-color: transparent;
-        flex-direction: row; }
+
+.nav-list {
+    margin-bottom: 30px;
+}
+
+.nav-item:first-child {
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.nav-item:not(:first-child) {
+    border-bottom: 1px solid #292929;
+}
+
+.nav-item {
+    padding: 10px 0;
+}
+
+.nav-item__img {
+    margin: 0 10px 0 25px;
+    height: 17px;
+    width: 22px;
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colorWhite);
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 16px;
+    padding: 0 25px;
+}
+
+.nav-btn {
+    width: 100%;
+    height: 34px;
+}
+
+.btnLogin {
+    border: 2px solid;
+    border-image: linear-gradient(180deg, #6700EB 0%, #57008C 100%) 1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9D9D9D;
+}
+
+.btnSign {
+    background: var(--colorViolet);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 /*Burger-button*/
 
 .burger {
-    width: 20px;
-    height: 20px;
     position: absolute;
     left: 20px;
-    z-index: 6;
+    top: 25px;
+    width: 20px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-self: flex-start;
     background-color: transparent
-}
-
-@media (min-width: 767px) {
-    .burger {
-        display: none;
-    }
 }
 
 .burger.active {
     position: absolute;
     left: 90%;
+    z-index: 6;
 }
 
 .burger span {
@@ -91,4 +131,23 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (min-width: 767px) {
+    .menu-container {
+        height: 100%;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    .nav {
+        position: static;
+        transform: translateX(0);
+        padding: 0;
+        width: auto;
+    }
+
+    .burger {
+        display: none;
+    }
 }

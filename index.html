@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title Page</title>
     <!--    <link rel="icon" href="/img/favicon.png">-->
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/resets.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +26,31 @@
                 <nav class="nav js-burg">
                     <div class="menu-container">
                         <ul class="nav-list">
-                            <li><a class="nav-item" href="#">Home</a></li>
-                            <li><a class="nav-item" href="#">About us</a></li>
-                            <li><a class="nav-item" href="#"></a>Privacy and Cookies Policy</li>
-                            <li><a class="nav-item" href="#">Contact us</a></li>
+                            <li class="nav-item">
+                                <img class="nav-item__img" src="images/icons/bg-home.svg" alt="icon">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <img class="nav-item__img" src="images/icons/bg-user.svg" alt="icon">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <img class="nav-item__img" src="images/icons/bg-list.svg" alt="icon">
+                                <a class="nav-link" href="#">Privacy and Cookies Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <img class="nav-item__img" src="images/icons/bg-mail.svg" alt="icon">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
                         </ul>
+                        <a class="burger-logo" href="index.html">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                        <div class="nav-buttons">
+                            <button class="nav-btn btnLogin">Login</button>
+                            <button class="nav-btn btnSign">Sing up</button>
+                        </div>
                     </div>
-
                 </nav>
                 <a class="header-logo" href="index.html">
                     <img src="images/logo.svg" alt="logo">
