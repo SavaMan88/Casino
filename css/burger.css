@@ -25,6 +25,8 @@
 }
 
 .nav-list {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
@@ -66,8 +68,7 @@
 }
 
 .btnLogin {
-    border: 2px solid;
-    border-image: linear-gradient(180deg, #6700EB 0%, #57008C 100%) 1;
+    border: 2px solid #57008C;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -138,6 +139,8 @@
         height: 100%;
         background-color: transparent;
         flex-direction: row;
+        align-items: center;
+        padding-top: 0;
     }
 
     .nav {
@@ -145,6 +148,53 @@
         transform: translateX(0);
         padding: 0;
         width: auto;
+    }
+
+    .nav-list {
+        margin-bottom: 0;
+        flex-direction: row;
+        column-gap: 34px;
+        flex-basis: 50%;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+
+    .nav-item:not(:first-child) {
+        border: 0;
+    }
+
+    .nav-item:first-child {
+        border: 0;
+    }
+
+    .nav-item__img {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        line-height: 21px;
+        color: #9D9D9D;
+        white-space: nowrap;
+    }
+    .nav-link:hover {
+        color: var(--colorWhite);
+    }
+
+    .nav-buttons {
+        flex-direction: row;
+        padding: 0;
+        flex-basis: 50%;
+        justify-content: right;
+
+    }
+
+    .nav-btn {
+        height: 48px;
+        width: 100px;
+        border-radius: 10px;
     }
 
     .burger {
