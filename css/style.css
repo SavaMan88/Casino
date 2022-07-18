@@ -1,20 +1,11 @@
-/*@font-face {*/
-/*    font-family: Futura PT;*/
-/*    src: url(../fonts/FuturaPT-Medium.woff2) format("woff2"),*/
-/*    url(../fonts/FuturaPT-Medium.woff) format("woff");*/
-/*    font-weight: 400;*/
-/*    font-style: normal;*/
-/*    font-display: swap;*/
-/*}*/
-
 :root {
+    --colorGrey: #9D9D9D;
     --colorBlack: #171717;
     --colorWhite: #fff;
     --colorLilac: #DBBEFF;
     --colorText: #F9F9F9;
     --colorBack: #1C0033;
     --colorViolet: linear-gradient(180deg, #6700EB 0%, #57008C 100%);
-
 }
 
 body {
@@ -159,7 +150,7 @@ p {
     transform: translateX(0);
 }
 
-    /*Nav-container*/
+/*Nav-container*/
 
 .menu-container {
     height: 100vh;
@@ -218,7 +209,7 @@ p {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #9D9D9D;
+    color: var(--colorGrey);
 }
 
 .btnSign {
@@ -228,7 +219,7 @@ p {
     line-height: 18px;
 }
 
-    /*Burger-button*/
+/*Burger-button*/
 
 .burger {
     position: absolute;
@@ -255,25 +246,30 @@ p {
     background-color: var(--colorWhite);
     transition: all 0.3s ease;
 }
+
 .burger span:nth-child(1) {
     margin-bottom: 3px;
 }
+
 .burger span:nth-child(3) {
     margin-top: 3px;
 }
 
 .burger.active span {
     position: absolute;
-    background-color: #878787;
+    background-color: var(--colorGrey);
 }
+
 .burger.active span:nth-child(1) {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .burger.active span:nth-child(2) {
     opacity: 0;
 }
+
 .burger.active span:nth-child(3) {
     top: 40%;
     left: 50%;
@@ -326,9 +322,10 @@ p {
     .nav-link {
         font-size: 18px;
         line-height: 21px;
-        color: #9D9D9D;
+        color: var(--colorGrey);
         white-space: nowrap;
     }
+
     .nav-link:hover {
         color: var(--colorWhite);
     }
@@ -350,6 +347,7 @@ p {
     .burger {
         display: none;
     }
+
     .header-logo {
         display: none;
     }
@@ -365,8 +363,15 @@ p {
         display: block;
         flex-basis: content;
     }
+
     .nav-list {
         column-gap: 34px;
+    }
+
+    .nav-btn {
+        height: 48px;
+        width: 137px;
+        border-radius: 10px;
     }
 
 }
@@ -580,7 +585,7 @@ p {
     display: block;
     font-size: 13px;
     line-height: 15px;
-    color: #9D9D9D;
+    color: var(--colorGrey);
 }
 
 .footer__copy {
