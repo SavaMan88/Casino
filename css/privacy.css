@@ -1,0 +1,24 @@
+.privacy-section {
+    padding: 91px 0 27px;
+    background-color: var(--colorBack);
+}
+
+.privacy-section__wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.privacy-section__list {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.privacy-section__list p {
+    display: inline-block;
+}
+@media (min-width: 767px) {
+    .privacy-section {
+        padding: 168px 0 102px;
+    }
+}
