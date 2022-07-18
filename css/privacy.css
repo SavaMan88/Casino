@@ -1,6 +1,12 @@
 .privacy-section {
-    padding: 91px 0 27px;
+    margin-top: 82px;
+    padding: 29px 0 27px;
     background-color: var(--colorBack);
+}
+
+.privacy-section__title {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .privacy-section__wrap {
@@ -9,9 +15,10 @@
     row-gap: 20px;
 }
 
-.privacy-section__list {
-    list-style: disc;
+.privacy-section__list li {
+    list-style-type: disc;
     list-style-position: inside;
+    margin-left: 12px;
 }
 
 .privacy-section__list p {
@@ -19,6 +26,9 @@
 }
 @media (min-width: 767px) {
     .privacy-section {
-        padding: 168px 0 102px;
+        padding: 86px 0 102px;
+    }
+    .privacy-section__title {
+        margin-bottom: 70px;
     }
 }
