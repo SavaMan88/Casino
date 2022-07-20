@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title Page</title>
+    <title>Casino</title>
     <!--    <link rel="icon" href="/img/favicon.png">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,12 +60,21 @@
 
     <main>
         <section class="contact-section">
-            <div class="container">
-                <h1 class="content-section__title">Contact us</h1>
-                <div class="content-section__wrap">
-
+                <h1 class="contact-title">Contact us</h1>
+                <div class="contact-wrap">
+                    <form class="contact-form" action="#">
+                        <label for="userName">Your Username</label>
+                        <input type="text" id="userName" placeholder="Enter Your Username">
+                        <label for="mail">Your Email</label>
+                        <input type="text" id="mail" placeholder="Enter Your Email">
+                        <label for="message">Your Message (optional)</label>
+                        <textarea name="area" id="message" placeholder="Enter Your Message "></textarea>
+                        <button class="yellow-btn contact-btn">Submit</button>
+                    </form>
+                    <div class="contact-img">
+                        <img src="images/chest.png" alt="img">
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
