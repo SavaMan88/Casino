@@ -88,6 +88,31 @@ p {
     }
 }
 
+input {
+    background-color: #231C2C;
+}
+
+input:not(input[type=checkbox]){
+    border: 2px solid #A259FF;
+    border-radius: 5px;
+}
+
+@media (min-width: 767px) {
+    input {
+        font-size: 19px;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #B8B8B8;
+}
+::-moz-placeholder {
+    color: #B8B8B8;
+}
+:-ms-input-placeholder {
+    color: #B8B8B8;
+}
+
 .btn-yellow {
     display: flex;
     justify-content: center;

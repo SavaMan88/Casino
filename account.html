@@ -62,7 +62,22 @@
             <div class="container">
                 <h1 class="account-title">Create Account</h1>
                 <form class="account-form" action="#">
-
+                    <div class="account-userBlock">
+                        <input class="account-name" type="text" placeholder="Name">
+                        <input class="account-surname" type="text" placeholder="Surname">
+                    </div>
+                    <input class="reg-email reg-input" type="email" placeholder="Email">
+                    <input class="reg-pass reg-input" type="password" placeholder="Password">
+                    <div class="account-checkBlock">
+                        <label class="opo">
+                            <input type="checkbox" class="checkNone">
+                            <span class="account-checkbox"></span>
+                        </label>
+                        <p class="account-checkBlock__text">I agree to all statements included in
+                            <a class="account-checkBlock__link" href="privacy.html">Privacy and Cookies Policy</a>
+                        </p>
+                    </div>
+                    <button class="account-btn btn-violet">Sign Up</button>
                 </form>
             </div>
         </section>
