@@ -1,0 +1,23 @@
+.account-section {
+    margin-top: 82px;
+    padding: 29px 0 103px;
+    background: url("../images/back-accountMob.png") center/cover no-repeat;
+    min-height: 558px;
+}
+
+.account-title {
+    text-align: center;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-height: 767px) {
+    .account-section {
+        padding: 86px 0 207px;
+        background: url("../images/back-account.png") center/cover no-repeat;
+        min-height: 875px;
+    }
+}

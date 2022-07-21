@@ -33,6 +33,8 @@
 }
 
 .contact-form label {
+    font-size: 17px;
+    line-height: 20px;
     margin-bottom: 5px;
 }
 
@@ -41,6 +43,8 @@
     border: 2px solid #A259FF;
     border-radius: 5px;
     margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .contact-form textarea {
@@ -53,6 +57,8 @@
 }
 
 .contact-btn {
+    font-size: 18px;
+    line-height: 21px;
     padding: 14px 78px;
     margin: 0 auto;
 }
@@ -70,15 +76,27 @@
         max-width: 615px;
     }
 
-    .contact-wrap {
-        padding: 0 80px;
-    }
-
     .contact-title {
         margin-bottom: 13px;
     }
 
+    .contact-wrap {
+        padding: 0 80px;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .contact-form input {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
     .contact-btn {
+        font-size: 22px;
+        line-height: 25px;
         width: 100%;
     }
 
