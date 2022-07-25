@@ -61,21 +61,22 @@
 
     <main>
         <section class="contact-section">
-                <h1 class="contact-title">Contact us</h1>
-                <div class="contact-wrap">
-                    <form class="contact-form" action="#">
-                        <label for="userName">Your Username</label>
-                        <input type="text" id="userName" placeholder="Enter Your Username">
-                        <label for="mail">Your Email</label>
-                        <input type="text" id="mail" placeholder="Enter Your Email">
-                        <label for="message">Your Message (optional)</label>
-                        <textarea name="area" id="message" placeholder="Enter Your Message "></textarea>
-                        <button class="btn-violet contact-btn">Submit</button>
-                    </form>
-                    <div class="contact-img">
-                        <img src="images/chest.png" alt="img">
-                    </div>
+            <h1 class="contact-title">Contact us</h1>
+            <div class="contact-wrap">
+                <form class="contact-form" id="form-contact" method="POST" name="form-contact"
+                      action="https://jsonplaceholder.typicode.com/posts" novalidate>
+                    <label for="userName-ui">Your Username</label>
+                    <input type="text" name="userName-ui" id="userName-ui" placeholder="Enter Your Username" required>
+                    <label for="email-ui">Your Email</label>
+                    <input type="email" name="email-ui" id="email-ui" placeholder="Enter Your Email" required>
+                    <label for="message">Your Message (optional)</label>
+                    <textarea name="message" id="message" placeholder="Enter Your Message "></textarea>
+                    <button type="submit" class="btn-violet contact-btn">Submit</button>
+                </form>
+                <div class="contact-img">
+                    <img src="images/chest.png" alt="img">
                 </div>
+            </div>
         </section>
     </main>
 
@@ -96,9 +97,13 @@
         <button type="button" class="popup__close js-popup-close"></button>
         <div class="popup__wrap">
             <h1 class="popup__title">Login</h1>
-            <input class="reg-email" type="email" placeholder="Email">
-            <input class="reg-pass" type="password" placeholder="Password">
-            <button class="popup-btn btn-violet">Login</button>
+            <form class="popup-form" id="form-login" method="POST" name="form-login" action="https://jsonplaceholder.typicode.com/posts" novalidate>
+                <label for="login-email"></label>
+                <input class="reg-email" id="login-email" name="login-email" type="email" placeholder="Email">
+                <label for="login-password"></label>
+                <input class="reg-pass" id="login-password" name="login-password" type="password" placeholder="Password">
+                <button class="popup-btn btn-violet" type="submit">Login</button>
+            </form>
         </div>
     </div>
 

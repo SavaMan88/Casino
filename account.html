@@ -62,23 +62,26 @@
         <section class="account-section">
             <div class="container">
                 <h1 class="account-title">Create Account</h1>
-                <form class="account-form" action="#">
+                <form class="account-form" id="form-account" method="POST" name="form-account"
+                      action="https://jsonplaceholder.typicode.com/posts" novalidate>
                     <div class="account-userBlock">
-                        <input class="account-name" type="text" placeholder="Name">
-                        <input class="account-surname" type="text" placeholder="Surname">
+                        <input class="account-name" name="regName" id="regName" type="text" placeholder="Name">
+                        <input class="account-surname" name="regSurname" id="regSurname" type="text" placeholder="Surname">
                     </div>
-                    <input class="reg-email reg-input" type="email" placeholder="Email">
-                    <input class="reg-pass reg-input" type="password" placeholder="Password">
+                    <label for="regEmail"></label>
+                    <input class="reg-email reg-input" id="regEmail" name="regEmail" type="email" placeholder="Email">
+                    <label for="regPassword"></label>
+                    <input class="reg-pass reg-input" id="regPassword" name="regPassword" type="password" placeholder="Password">
                     <div class="account-checkBlock">
                         <label>
-                            <input type="checkbox" class="checkNone">
+                            <input type="checkbox" name="privacyCheck" class="checkNone" required>
                             <span class="account-checkbox"></span>
                         </label>
                         <p class="account-checkBlock__text">I agree to all statements included in
                             <a class="account-checkBlock__link" href="privacy.html">Privacy and Cookies Policy</a>
                         </p>
                     </div>
-                    <button class="account-btn btn-violet">Sign Up</button>
+                    <button type="submit" class="account-btn btn-violet">Sign Up</button>
                 </form>
             </div>
         </section>
@@ -100,9 +103,13 @@
         <button type="button" class="popup__close js-popup-close"></button>
         <div class="popup__wrap">
             <h1 class="popup__title">Login</h1>
-            <input class="reg-email" type="email" placeholder="Email">
-            <input class="reg-pass" type="password" placeholder="Password">
-            <button class="popup-btn btn-violet">Login</button>
+            <form class="popup-form" id="form-login" method="POST" name="form-login" action="https://jsonplaceholder.typicode.com/posts" novalidate>
+                <label for="login-email"></label>
+                <input class="reg-email" id="login-email" name="login-email" type="email" placeholder="Email">
+                <label for="login-password"></label>
+                <input class="reg-pass" id="login-password" name="login-password" type="password" placeholder="Password">
+                <button class="popup-btn btn-violet" type="submit">Login</button>
+            </form>
         </div>
     </div>
 

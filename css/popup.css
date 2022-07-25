@@ -48,10 +48,12 @@
 .popup__wrap {
     min-height: 100vh;
     background-color: var(--colorBack);
+    padding: 87px 20px;
+}
+
+.popup-form {
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding: 87px 20px;
 }
 
 /*Popup content*/
@@ -61,11 +63,11 @@
     margin-bottom: 43px;
 }
 
-.popup__wrap input:nth-child(2) {
+.popup-form input:nth-child(2) {
     margin-bottom: 25px;
 }
 
-.popup__wrap input:nth-child(3) {
+.popup-form input:nth-child(4) {
     margin-bottom: 66px;
 }
 
@@ -88,6 +90,8 @@
         width: 100%;
     }
 }
+
+    /*****/
 
 .popup__close {
     position: absolute;
