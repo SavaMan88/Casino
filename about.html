@@ -11,6 +11,7 @@
     <link media="all" rel="stylesheet" href="./css/resets.css">
     <link media="all" rel="stylesheet" href="./css/style.css">
     <link media="all" rel="stylesheet" href="./css/about.css">
+    <link media="all" rel="stylesheet" href="./css/popup.css">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                         <img src="images/logo.svg" alt="logo">
                     </a>
                     <div class="nav-buttons">
-                        <button class="nav-btn btnLogin">Login</button>
+                        <button class="nav-btn btnLogin js-show-popup" data-trigger="login-popup">Login</button>
                         <a class="nav-btn btnSign" href="account.html">Sing up</a>
                     </div>
                 </div>
@@ -65,48 +66,47 @@
                 <h2 class="about-content__tittle">Welcome to AqwaSlots online casino</h2>
                 <div class="about-content__wrap">
 
-                        <div class="about-content__text ord-1">
-                            <h4>About AqwaSlots</h4>
-                            <p>We are happy to invite you to AqwaSlots, the best free social online casino site in the
-                                country. You can explore and get lost in a large collection of social casino games
-                                designed
-                                with people in mind, with more than enough options for everyone, but these games do not
-                                allow you to win real money or claim free bonuses. The AqwaSlots team is very
-                                enthusiastic.
-                                That's right, AqwaSlots does not require real money.
-                                This free casino never sleeps, we work 24/7 to provide you with top-notch and rewarding
-                                game
-                                for fun.
-                            </p>
-                        </div>
+                    <div class="about-content__text ord-1">
+                        <h4>About AqwaSlots</h4>
+                        <p>We are happy to invite you to AqwaSlots, the best free social online casino site in the
+                            country. You can explore and get lost in a large collection of social casino games
+                            designed
+                            with people in mind, with more than enough options for everyone, but these games do not
+                            allow you to win real money or claim free bonuses. The AqwaSlots team is very
+                            enthusiastic.
+                            That's right, AqwaSlots does not require real money.
+                            This free casino never sleeps, we work 24/7 to provide you with top-notch and rewarding
+                            game
+                            for fun.
+                        </p>
+                    </div>
 
-                        <picture class="about-content__img ord-2">
-                            <source srcset="images/woman.png" media="(min-width: 767px)"/>
-                            <img src="images/womanMob.png" alt="img">
-                        </picture>
+                    <picture class="about-content__img ord-2">
+                        <source srcset="images/woman.png" media="(min-width: 767px)"/>
+                        <img src="images/womanMob.png" alt="img">
+                    </picture>
 
-                        <div class="about-content__text ord-3">
-                            <h4>Our mission</h4>
-                            <p>Despite a small development team, we have big plans for AqwaSlots, like being one of the
-                                biggest names in the social casino market. Admittedly, this is a big one to aim for, but
-                                we
-                                are confident that we can achieve it if we have the balance of time, our dedicated team
-                                and
-                                you, our great players and fans. We will continue to work hard to improve our offerings
-                                and
-                                provide players with memorable and winning online games. Join now and enjoy the ride!
-                            </p>
-                        </div>
+                    <div class="about-content__text ord-3">
+                        <h4>Our mission</h4>
+                        <p>Despite a small development team, we have big plans for AqwaSlots, like being one of the
+                            biggest names in the social casino market. Admittedly, this is a big one to aim for, but
+                            we
+                            are confident that we can achieve it if we have the balance of time, our dedicated team
+                            and
+                            you, our great players and fans. We will continue to work hard to improve our offerings
+                            and
+                            provide players with memorable and winning online games. Join now and enjoy the ride!
+                        </p>
+                    </div>
 
-                        <picture class="about-content__img ord-4">
-                            <source srcset="images/man.png" media="(min-width: 767px)"/>
-                            <img src="images/manMob.png" alt="img">
-                        </picture>
+                    <picture class="about-content__img ord-4">
+                        <source srcset="images/man.png" media="(min-width: 767px)"/>
+                        <img src="images/manMob.png" alt="img">
+                    </picture>
 
                 </div>
             </div>
         </section>
-
     </main>
     <footer class="footer">
         <div class="container">
@@ -119,10 +119,23 @@
             </span>
         </div>
     </footer>
+
+    <div class="overlay js-overlay"></div>
+    <div class="popup js-popup" data-popup="login-popup">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+            <h1 class="popup__title">Login</h1>
+            <input class="reg-email" type="email" placeholder="Email">
+            <input class="reg-pass" type="password" placeholder="Password">
+            <button class="popup-btn btn-violet">Login</button>
+        </div>
+    </div>
+
 </div>
 
 
 <script src="js/script.js" defer></script>
 <script src="js/burger.js" defer></script>
+<script src="js/popup.js" defer></script>
 </body>
 </html>

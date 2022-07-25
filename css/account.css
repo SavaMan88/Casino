@@ -1,6 +1,5 @@
 .account-section {
-    margin-top: 82px;
-    padding: 29px 0 103px;
+    padding: 91px 0 103px;
     background-image: url("../images/back-accountMob.png");
     background-repeat: no-repeat;
     background-position: top;
@@ -110,7 +109,7 @@
 
 @media (min-width: 767px) {
     .account-section {
-        padding: 86px 0 207px;
+        padding: 168px 0 207px;
         background-image: url("../images/back-account.png");
         background-repeat: no-repeat;
         background-position: top;

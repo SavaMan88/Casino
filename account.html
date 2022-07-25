@@ -11,6 +11,7 @@
     <link media="all" rel="stylesheet" href="./css/resets.css">
     <link media="all" rel="stylesheet" href="./css/style.css">
     <link media="all" rel="stylesheet" href="./css/account.css">
+    <link media="all" rel="stylesheet" href="./css/popup.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                     </a>
 
                     <div class="nav-buttons">
-                        <button class="nav-btn btnLogin">Login</button>
+                        <button class="nav-btn btnLogin js-show-popup" data-trigger="login-popup">Login</button>
                         <a class="nav-btn btnSign" href="account.html">Sing up</a>
                     </div>
                 </div>
@@ -69,7 +70,7 @@
                     <input class="reg-email reg-input" type="email" placeholder="Email">
                     <input class="reg-pass reg-input" type="password" placeholder="Password">
                     <div class="account-checkBlock">
-                        <label class="opo">
+                        <label>
                             <input type="checkbox" class="checkNone">
                             <span class="account-checkbox"></span>
                         </label>
@@ -93,10 +94,23 @@
             </span>
         </div>
     </footer>
+
+    <div class="overlay js-overlay"></div>
+    <div class="popup js-popup" data-popup="login-popup">
+        <button type="button" class="popup__close js-popup-close"></button>
+        <div class="popup__wrap">
+            <h1 class="popup__title">Login</h1>
+            <input class="reg-email" type="email" placeholder="Email">
+            <input class="reg-pass" type="password" placeholder="Password">
+            <button class="popup-btn btn-violet">Login</button>
+        </div>
+    </div>
+
 </div>
 
 
 <script src="js/script.js" defer></script>
 <script src="js/burger.js" defer></script>
+<script src="js/popup.js" defer></script>
 </body>
 </html>
