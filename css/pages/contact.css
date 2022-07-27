@@ -14,14 +14,27 @@ header {
 }
 
 .contact-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 45px;
+    -moz-column-gap: 45px;
     column-gap: 45px;
 }
 
 .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
 }
@@ -66,6 +79,7 @@ header {
     }
 
     .contact-form {
+        -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     }
 

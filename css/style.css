@@ -117,9 +117,17 @@ input:not(input[type=checkbox]) {
 }
 
 .btn-yellow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#D8B500), to(#FF9900));
+    background: -o-linear-gradient(top, #D8B500 0%, #FF9900 100%);
     background: linear-gradient(180deg, #D8B500 0%, #FF9900 100%);
     border: 2px solid #FFD600;
     border-radius: 20px;
@@ -127,8 +135,14 @@ input:not(input[type=checkbox]) {
 }
 
 .btn-violet {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: var(--colorViolet);
     border-radius: 10px;
@@ -167,8 +181,15 @@ input:not(input[type=checkbox]) {
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -186,8 +207,15 @@ input:not(input[type=checkbox]) {
     position: fixed;
     z-index: 3;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -216,6 +244,8 @@ input:not(input[type=checkbox]) {
 
 /*BODY*/
 .main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
 }
 
@@ -290,8 +320,13 @@ input:not(input[type=checkbox]) {
 }
 
 .homeInfo-section__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 67px 140px;
 }
@@ -332,8 +367,12 @@ input:not(input[type=checkbox]) {
 }
 
 .game-section__wrap {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 9px auto;
     grid-template-columns: repeat(2, auto);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 9px;
 }
@@ -349,10 +388,19 @@ input:not(input[type=checkbox]) {
     width: 100%;
     background-color: var(--colorBlack);
     opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     padding: 5px;
 }
@@ -385,9 +433,51 @@ input:not(input[type=checkbox]) {
     }
 
     .game-section__wrap {
+        -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr;
         grid-template-columns: repeat(4, 1fr);
+        -ms-grid-rows: 1fr 24px 1fr;
         grid-template-rows: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .game-section__wrap > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .game-section__wrap > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .game-section__wrap > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .game-section__wrap > *:nth-child(4) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+    }
+
+    .game-section__wrap > *:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .game-section__wrap > *:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .game-section__wrap > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+    }
+
+    .game-section__wrap > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 7;
     }
 
     .game-section__title {
