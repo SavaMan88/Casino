@@ -28,7 +28,7 @@
 @media (min-width: 768px) {
     .popup {
         position: fixed;
-        top: 50%;
+        top: 54%;
         left: 50%;
         transform: translate(-50%, -45%);
         z-index: 99;
@@ -88,6 +88,8 @@
 
     .popup-btn {
         width: 100%;
+        font-size: 22px;
+        line-height: 25px;
     }
 }
 

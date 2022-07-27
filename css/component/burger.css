@@ -1,0 +1,249 @@
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    transition: all 0.3s ease;
+    transform: translateX(-110%);
+}
+
+.nav.active {
+    transform: translateX(0);
+}
+
+.menu-container {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBlack);
+    display: flex;
+    flex-direction: column;
+    padding-top: 77px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.nav-item:first-child {
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.nav-item:not(:first-child) {
+    border-bottom: 1px solid #292929;
+}
+
+.nav-item {
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+}
+
+.nav-item__img {
+    margin: 0 10px 0 25px;
+    height: 17px;
+    width: 22px;
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colorWhite);
+    white-space: nowrap;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 16px;
+    padding: 0 25px;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 34px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    box-shadow: 0 0 10px 5px var(--colorLilac);
+}
+
+.btnLogin {
+    border: 2px solid #57008C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--colorGrey);
+}
+
+.btnSign {
+    background: var(--colorViolet);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--colorWhite);
+}
+
+@media (min-width: 767px) {
+    .nav-btn {
+        font-size: 18px;
+    }
+}
+
+/*Burger-button*/
+.burger {
+    position: absolute;
+    left: 20px;
+    top: 38%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-start;
+    background-color: transparent
+}
+
+.burger.active {
+    position: absolute;
+    left: 90%;
+    z-index: 6;
+}
+
+.burger span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--colorWhite);
+    transition: all 0.3s ease;
+}
+
+.burger span:nth-child(1) {
+    margin-bottom: 3px;
+}
+
+.burger span:nth-child(3) {
+    margin-top: 3px;
+}
+
+.burger.active span {
+    position: absolute;
+    background-color: var(--colorGrey);
+}
+
+.burger.active span:nth-child(1) {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (min-width: 767px) {
+    .menu-container {
+        height: 100%;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .nav {
+        position: static;
+        transform: translateX(0);
+        padding: 0;
+        width: auto;
+    }
+
+    .nav-list {
+        margin-bottom: 0;
+        flex-direction: row;
+        column-gap: 25px;
+        flex-basis: 50%;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+
+    .nav-item:not(:first-child) {
+        border: 0;
+    }
+
+    .nav-item:first-child {
+        border: 0;
+    }
+
+    .nav-item__img {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--colorGrey);
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        color: var(--colorWhite);
+    }
+
+    .nav-buttons {
+        flex-direction: row;
+        padding: 0;
+        flex-basis: 50%;
+        justify-content: right;
+
+    }
+
+    .nav-btn {
+        height: 48px;
+        width: 100px;
+        border-radius: 10px;
+
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header-logo {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header-container {
+        padding: 0 50px;
+    }
+
+    .burger-logo {
+        display: block;
+    }
+
+    .nav-list {
+        column-gap: 34px;
+    }
+
+    .nav-btn {
+        height: 48px;
+        width: 137px;
+        border-radius: 10px;
+    }
+}

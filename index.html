@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link media="all" rel="stylesheet" href="./css/resets.css">
+    <link media="all" rel="stylesheet" href="css/resets.css">
     <link media="all" rel="stylesheet" href="./css/style.css">
-    <link media="all" rel="stylesheet" href="./css/popup.css">
+    <link media="all" rel="stylesheet" href="./css/component/burger.css">
+    <link media="all" rel="stylesheet" href="css/component/popup.css">
 </head>
 
 <body>
@@ -24,27 +25,27 @@
             </button>
             <nav class="nav js-burg">
                 <div class="menu-container">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <img class="nav-item__img" src="images/icons/bg-home.svg" alt="icon">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <img class="nav-item__img" src="images/icons/bg-user.svg" alt="icon">
-                                <a class="nav-link" href="about.html">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <img class="nav-item__img" src="images/icons/bg-list.svg" alt="icon">
-                                <a class="nav-link" href="privacy.html">Privacy and Cookies Policy</a>
-                            </li>
-                            <li class="nav-item">
-                                <img class="nav-item__img" src="images/icons/bg-mail.svg" alt="icon">
-                                <a class="nav-link" href="contact.html">Contact us</a>
-                            </li>
-                        </ul>
-                        <a class="burger-logo" href="index.html">
-                            <img src="images/logo.svg" alt="logo">
-                        </a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <img class="nav-item__img" src="images/icons/bg-home.svg" alt="icon">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item__img" src="images/icons/bg-user.svg" alt="icon">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item__img" src="images/icons/bg-list.svg" alt="icon">
+                            <a class="nav-link" href="privacy.html">Privacy and Cookies Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-item__img" src="images/icons/bg-mail.svg" alt="icon">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <a class="burger-logo" href="index.html">
+                        <img src="images/header-logo.svg" alt="logo">
+                    </a>
                     <div class="nav-buttons">
                         <button class="nav-btn btnLogin js-show-popup" data-trigger="login-popup">Login</button>
                         <a class="nav-btn btnSign" href="account.html">Sing up</a>
@@ -52,7 +53,7 @@
                 </div>
             </nav>
             <a class="header-logo" href="index.html">
-                <img src="images/logo.svg" alt="logo">
+                <img src="images/header-logo.svg" alt="logo">
             </a>
         </div>
     </header>
@@ -66,14 +67,16 @@
         <section class="homeContent-section">
             <div class="container">
                 <h3 class="homeContent-section__title">Play Best No Real Money Online Casino Games</h3>
-                <p class="homeContent-section__text">Few online players can boast that their online casino has lasted more
+                <p class="homeContent-section__text">Few online players can boast that their online casino has lasted
+                    more
                     than two decades. Aqwaslots casino has not only been operating successfully since 1998, but has also
                     earned a reputation for providing free social casino games entertainment in a 100% secure gaming
                     environment. The casino's diverse selection of best casino games ensures that there is something for
                     every player. One of the table casino games that is very popular with players is online blackjack.
                     This game can not earn real money or get free bonuses. Various types of blackjack are available,
                     including classic blackjack, European blackjack and Atlantic City blackjack.</p>
-                <p class="homeContent-section__text">Learn more about the variety of online blackjack offered, get answers
+                <p class="homeContent-section__text">Learn more about the variety of online blackjack offered, get
+                    answers
                     to frequently asked questions,
                     blackjack terminology and general blackjack rules at Aqwaslots casino.</p>
             </div>
@@ -167,7 +170,9 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="images/logo.svg" alt="logo">
+            <a href="index.html">
+                <img class="footer__logo" src="images/footer-logo.svg" alt="logo">
+            </a>
             <span class="footer__copy">© 2022  aqwaslots.com All rights reserved</span>
             <span class="footer__text">
                 This is a social online casino site where you can play aqwaslots.com does not offer gambling
@@ -182,11 +187,13 @@
         <button type="button" class="popup__close js-popup-close"></button>
         <div class="popup__wrap">
             <h1 class="popup__title">Login</h1>
-            <form class="popup-form" id="form-login" method="POST" name="form-login" action="https://jsonplaceholder.typicode.com/posts" novalidate>
+            <form class="popup-form" id="form-login" method="POST" name="form-login"
+                  action="https://jsonplaceholder.typicode.com/posts" novalidate>
                 <label for="login-email"></label>
                 <input class="reg-email" id="login-email" name="login-email" type="email" placeholder="Email">
                 <label for="login-password"></label>
-                <input class="reg-pass" id="login-password" name="login-password" type="password" placeholder="Password">
+                <input class="reg-pass" id="login-password" name="login-password" type="password"
+                       placeholder="Password">
                 <button class="popup-btn btn-violet" type="submit">Login</button>
             </form>
         </div>

@@ -3,7 +3,7 @@ header {
 }
 
 .contact-section {
-    margin-top: 82px;
+    margin-top: 62px;
     padding: 29px 20px 58px;
     background-color: var(--colorBack);
 }
@@ -51,8 +51,6 @@ header {
 }
 
 .contact-btn {
-    font-size: 18px;
-    line-height: 21px;
     padding: 14px 78px;
     margin: 0 auto;
 }
@@ -63,11 +61,12 @@ header {
 
 @media (min-width: 767px) {
     .contact-section {
+        margin-top: 82px;
         padding: 86px 0 153px;
     }
 
     .contact-form {
-        max-width: 615px;
+        flex-basis: 60%;
     }
 
     .contact-title {
@@ -89,8 +88,6 @@ header {
     }
 
     .contact-btn {
-        font-size: 22px;
-        line-height: 25px;
         width: 100%;
     }
 

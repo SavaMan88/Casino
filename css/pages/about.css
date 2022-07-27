@@ -4,8 +4,8 @@ header {
 
 .about-section {
     min-height: 107px;
-    margin-top: 82px;
-    background: url("../images/backMob-about.png") center/cover no-repeat;
+    margin-top: 62px;
+    background: url("../../images/backMob-about.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,8 +40,9 @@ header {
 
 @media (min-width: 767px) {
     .about-section {
+        margin-top: 82px;
         min-height: 300px;
-        background: url("../images/back-about.png") center/cover no-repeat;
+        background: url("../../images/back-about.png") center/cover no-repeat;
     }
     .about-content__text:nth-of-type(2) {
         text-align: left;

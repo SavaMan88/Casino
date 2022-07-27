@@ -3,7 +3,7 @@ header {
 }
 
 .privacy-section {
-    margin-top: 82px;
+    margin-top: 62px;
     padding: 29px 0 27px;
     background-color: var(--colorBack);
 }
@@ -30,6 +30,7 @@ header {
 }
 @media (min-width: 767px) {
     .privacy-section {
+        margin-top: 82px;
         padding: 86px 0 102px;
     }
     .privacy-section__title {

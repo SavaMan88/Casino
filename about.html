@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link media="all" rel="stylesheet" href="./css/resets.css">
+    <link media="all" rel="stylesheet" href="css/resets.css">
     <link media="all" rel="stylesheet" href="./css/style.css">
-    <link media="all" rel="stylesheet" href="./css/about.css">
-    <link media="all" rel="stylesheet" href="./css/popup.css">
+    <link media="all" rel="stylesheet" href="css/pages/about.css">
+    <link media="all" rel="stylesheet" href="css/component/burger.css">
+    <link media="all" rel="stylesheet" href="css/component/popup.css">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                         </li>
                     </ul>
                     <a class="burger-logo" href="index.html">
-                        <img src="images/logo.svg" alt="logo">
+                        <img src="images/header-logo.svg" alt="logo">
                     </a>
                     <div class="nav-buttons">
                         <button class="nav-btn btnLogin js-show-popup" data-trigger="login-popup">Login</button>
@@ -53,7 +54,7 @@
                 </div>
             </nav>
             <a class="header-logo" href="index.html">
-                <img src="images/logo.svg" alt="logo">
+                <img src="images/header-logo.svg" alt="logo">
             </a>
         </div>
     </header>
@@ -65,7 +66,6 @@
             <div class="container">
                 <h2 class="about-content__tittle">Welcome to AqwaSlots online casino</h2>
                 <div class="about-content__wrap">
-
                     <div class="about-content__text ord-1">
                         <h4>About AqwaSlots</h4>
                         <p>We are happy to invite you to AqwaSlots, the best free social online casino site in the
@@ -80,12 +80,10 @@
                             for fun.
                         </p>
                     </div>
-
                     <picture class="about-content__img ord-2">
                         <source srcset="images/woman.png" media="(min-width: 767px)"/>
                         <img src="images/womanMob.png" alt="img">
                     </picture>
-
                     <div class="about-content__text ord-3">
                         <h4>Our mission</h4>
                         <p>Despite a small development team, we have big plans for AqwaSlots, like being one of the
@@ -98,19 +96,19 @@
                             provide players with memorable and winning online games. Join now and enjoy the ride!
                         </p>
                     </div>
-
                     <picture class="about-content__img ord-4">
                         <source srcset="images/man.png" media="(min-width: 767px)"/>
                         <img src="images/manMob.png" alt="img">
                     </picture>
-
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="images/logo.svg" alt="logo">
+            <a href="index.html">
+                <img class="footer__logo" src="images/footer-logo.svg" alt="logo">
+            </a>
             <span class="footer__copy">© 2022  aqwaslots.com All rights reserved</span>
             <span class="footer__text">
                 This is a social online casino site where you can play aqwaslots.com does not offer gambling
@@ -125,11 +123,13 @@
         <button type="button" class="popup__close js-popup-close"></button>
         <div class="popup__wrap">
             <h1 class="popup__title">Login</h1>
-            <form class="popup-form" id="form-login" method="POST" name="form-login" action="https://jsonplaceholder.typicode.com/posts" novalidate>
+            <form class="popup-form" id="form-login" method="POST" name="form-login"
+                  action="https://jsonplaceholder.typicode.com/posts" novalidate>
                 <label for="login-email"></label>
                 <input class="reg-email" id="login-email" name="login-email" type="email" placeholder="Email">
                 <label for="login-password"></label>
-                <input class="reg-pass" id="login-password" name="login-password" type="password" placeholder="Password">
+                <input class="reg-pass" id="login-password" name="login-password" type="password"
+                       placeholder="Password">
                 <button class="popup-btn btn-violet" type="submit">Login</button>
             </form>
         </div>
